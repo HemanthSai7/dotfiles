@@ -1,0 +1,32 @@
+format="$all"
+[character]
+success_symbol="[➜](#50c878)"
+error_symbol = "[✖](bold red) "
+
+[line_break]
+disabled=true
+
+[git_branch]
+style="#50c878"
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ⇡${count}"
+behind = "🐢 ⇣${count}"
+diverged = "🔱 🏎️ 💨 ⇕⇡${ahead_count}⇣${behind_count}"
+untracked = "🛤️  ×${count}"
+stashed = "📦 "
+modified = "📝 ×${count}"
+staged = '[++\($count\)](green)'
+renamed = "📛 ×${count}"
+deleted = "🗑️  ×${count}"
+style = "bright-white"
+format = "$all_status$ahead_behind"
+
+[conda]
+format = "[$symbol$environment](#50c878) "
+
+
+[python]
+style="bold green"
+format="[$symbol$version]($style)"
