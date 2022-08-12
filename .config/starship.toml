@@ -6,8 +6,16 @@ error_symbol = "[✖](bold red) "
 [line_break]
 disabled=true
 
+[username]
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
 [git_branch]
 style="#50c878"
+symbol = "🌱 "
 
 [git_status]
 conflicted = "⚔️ "
@@ -24,9 +32,9 @@ style = "bright-white"
 format = "$all_status$ahead_behind"
 
 [conda]
-format = "[$symbol$environment](#50c878) "
-
+format = "[$symbol$environment](#50c878)"
 
 [python]
-style="bold green"
+style="yellow bold"
 format="[$symbol$version]($style)"
+
